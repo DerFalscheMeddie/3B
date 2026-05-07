@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://2epd5iqopie3"]
+
+[ext_resource type="Texture2D" uid="uid://bjkpit778oya" path="res://icon.svg" id="1_bexhn"]
+[ext_resource type="Script" uid="uid://cxh0e3gyjkewy" path="res://level.gd" id="1_t7iv1"]
+[ext_resource type="Script" uid="uid://bbvn6eygyl60f" path="res://click.gd" id="2_2nifc"]
+[ext_resource type="PackedScene" uid="uid://cnx71qg4qe12t" path="res://collectible.tscn" id="4_wkftn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7iv1"]
+size = Vector2(126, 128)
+
+[node name="Node2D" type="Node2D" unique_id=97705713]
+script = ExtResource("1_t7iv1")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=492236716]
+position = Vector2(250, 200)
+rotation = 0.9948377
+scale = Vector2(1.47, 1.47)
+skew = 0.27925268
+script = ExtResource("2_2nifc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=605388508]
+texture = ExtResource("1_bexhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1865873377]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_t7iv1")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=360817963]
+position = Vector2(500, 80)
+rotation = 1.5707964
+script = ExtResource("2_2nifc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2" unique_id=1851419203]
+texture = ExtResource("1_bexhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1384913997]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_t7iv1")
+
+[node name="Label" type="Label" parent="." unique_id=1743055525]
+offset_left = 615.0
+offset_top = 267.0
+offset_right = 953.0
+offset_bottom = 430.0
+text = "Durch drücken von q, w oder e
+können die Farben angepasst 
+werden."
+
+[node name="Area2D4" parent="." unique_id=1093011024 instance=ExtResource("4_wkftn")]
+position = Vector2(124, 446)
+
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="input_event" from="Area2D2" to="Area2D2" method="_on_input_event"]
