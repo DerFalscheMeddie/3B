@@ -12,10 +12,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	for child in childs:
-		if (is_instance_of(child, Area2D)):
-			child.rotate(0.05)
-	
+
 	if (Input.is_action_just_pressed("Input")):
 		if (Input.is_key_pressed(KEY_Q)):
 			childs[0].modulate = Color(randf(), randf(), randf())

@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1779094365
+click.gd::GDScript::2500806388157264747::1778170209::0::1::::<>Area2D<><>0<>0<><>::
+collectible.tscn::PackedScene::5734767248415677777::1778513866::0::1::::<><><>0<>0<><>::uid://bbvn6eygyl60f::::res://click.gd<>uid://bqmb0d7is8ywv::::res://assets/tile_exclamation.png
+export_presets.cfg::TextFile::-1::1778170209::0::1::::<><><>0<>0<><>::
+level.gd::GDScript::6403161964359652724::1778171344::0::1::::<>Node2D<><>0<>0<><>::
+Level.tscn::PackedScene::1904273990321539228::1778514120::0::1::::<><><>0<>0<><>::uid://cxh0e3gyjkewy::::res://level.gd<>uid://bbvn6eygyl60f::::res://click.gd<>uid://bj47vrdji0wed::::res://assets/stone_packed.png<>uid://cnx71qg4qe12t::::res://collectible.tscn
+::res://assets/::1778172351
+platformerPack_character@2.png::CompressedTexture2D::6394583286187623916::1778171061::1778171061::1::::<><><>0<>0<>349327f1c9f8c38b8498f53e7df67266<>res://.godot/imported/platformerPack_character@2.png-743829fd3ff594e52e943d6d83ca7541.ctex::
+sokoban_spritesheet.png::CompressedTexture2D::7444713306031253657::1778170895::1778170895::1::::<><><>0<>0<>f057b103a5de2bc1b584d717b2f7e3d3<>res://.godot/imported/sokoban_spritesheet.png-e5dd8490827f54df637074ece98e7a67.ctex::
+stone_packed.png::CompressedTexture2D::3079968574695639051::1778172351::1778172351::1::::<><><>0<>0<>4f7091c9c4401aa100883007c948eb9b<>res://.godot/imported/stone_packed.png-28d625dee8228ae976dc46206ba5318b.ctex::
+tile_exclamation.png::CompressedTexture2D::3534320284183380105::1778171177::1778171177::1::::<><><>0<>0<>cb77700f3c14af7b64338110a31fcddf<>res://.godot/imported/tile_exclamation.png-16761ad5d306a0f406b3d6dc48559780.ctex::
